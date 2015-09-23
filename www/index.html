@@ -1,0 +1,48 @@
+        <!DOCTYPE html>
+        <html ng-app="consClimaRest">
+            <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+                <title>Previsão do Tempo</title>
+
+                <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+                <link href="css/style.css" rel="stylesheet">
+                <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+                <script src="cordova.js"></script>
+                <script src="js/ng-cordova.min.js"></script>
+
+                <script src="js/app.js"></script>
+            </head>
+            <body>
+                <ion-pane>
+                    <ion-header-bar class="bar-dark">
+                        <h1 class="title">Previsão do Tempo</h1>
+                    </ion-header-bar>
+
+                    <ion-content>
+
+                        <div ng-controller="previsaoClimaRestCtrl">
+                        <input type="text" placeholder="Digite a Cidade" data-ng-model="cidade">
+                        <button class="button" ng-click="loadWeather()"> Refresh </button></br>
+
+                        <ion-item>
+                            <div ng-show="mostrarPrevisaoLayout">
+                            <img ng-src="http://openweathermap.org/img/w/{{icone}}.png" ng-show="icone!=''"> </br>
+
+                            <h2 ng-bind-html="Previsao"></h2>
+                            <p>Previsão do tempo na Cidade: {{cidade}}</p>
+                            <p>Descrição do Tempo: {{descricao}}</p>
+                            <p>Temperatura: {{temperatura}}</p>
+                            <p>Humidade: {{humidade}}</p>
+                            <p>Velocidade do Vento: {{velocidade}}</p>
+                            <p>Pressão: {{pressao}}</p>
+                            <p>Latitude: {{latitude}}</p>
+                            <p>Longitude: {{longitude}}
+                            </div>
+                        </div>
+                      </ion-item>
+                    </ion-content>
+                </ion-pane>
+            </body>
+        </html>

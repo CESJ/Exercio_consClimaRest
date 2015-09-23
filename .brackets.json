@@ -1,0 +1,11 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/TNT/DesenvolvimentoMobile/Implement/consClimaRest/www/js/app - Copia (2).js",
+        "C:/TNT/DesenvolvimentoMobile/GitHub/Exercio_consClimaRest/plugins/cordova-plugin-device/tests/tests.js",
+        "C:/TNT/DesenvolvimentoMobile/GitHub/Exercio_consClimaRest/plugins/cordova-plugin-device/www/device.js",
+        "C:/TNT/DesenvolvimentoMobile/GitHub/Exercio_consClimaRest/plugins/cordova-plugin-splashscreen/src/blackberry10/index.js",
+        "C:/TNT/DesenvolvimentoMobile/GitHub/Exercio_consClimaRest/plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "C:/TNT/DesenvolvimentoMobile/GitHub/Exercio_consClimaRest/plugins/cordova-plugin-whitelist/whitelist.js",
+        "C:/TNT/DesenvolvimentoMobile/GitHub/Exercio_consClimaRest/plugins/io.litehelpers.cordova.sqlite/Lawnchair-adapter/test-www/lib/json2.js"
+    ]
+}
